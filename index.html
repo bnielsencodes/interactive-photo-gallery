@@ -4,26 +4,159 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles-mockup.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>Interactive Photo Gallery</title>
   </head>
   <body>
-    <div class="search-wrapper">
-      <input type="text" />
-    </div>
-    <div class="grid-wrapper">
-      <img src="images/gallery/01.jpg" alt="" />
-      <img src="images/gallery/02.jpg" alt="" />
-      <img src="images/gallery/03.jpg" alt="" />
-      <img src="images/gallery/04.jpg" alt="" />
-      <img src="images/gallery/05.jpg" alt="" />
-      <img src="images/gallery/06.jpg" alt="" />
-      <img src="images/gallery/07.jpg" alt="" />
-      <img src="images/gallery/08.jpg" alt="" />
-      <img src="images/gallery/09.jpg" alt="" />
-      <img src="images/gallery/10.jpg" alt="" />
-      <img src="images/gallery/11.jpg" alt="" />
-      <img src="images/gallery/12.jpg" alt="" />
-    </div>
+    <header>
+      <div class="search-wrapper">
+        <input type="text" placeholder="Search" />
+      </div>
+    </header>
+    <main>
+      <div class="gallery">
+        <a
+          href="#"
+          class="img-links"
+          data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields."
+        >
+          <img
+            class="gallery-images"
+            src="images/gallery/01.jpg"
+            alt="Hay bales in field with a cloudy sky above"
+        /></a>
+        <a
+          href="#"
+          class="img-links"
+          data-caption="The lake was so calm today. We had a great view of the snow on the mountains from here.
+"
+        >
+          <img
+            class="gallery-images"
+            src="images/gallery/02.jpg"
+            alt="Lake with snowy mountains in the background"
+        /></a>
+        <a
+          href="#"
+          class="img-links"
+          data-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below.
+"
+        >
+          <img
+            class="gallery-images"
+            src="images/gallery/03.jpg"
+            alt="Canyon with many green trees and an overcast sky above"
+        /></a>
+        <a
+          href="#"
+          class="img-links"
+          data-caption="It was amazing to see an iceberg up close, it was so cold but didn’t snow today. 
+"
+        >
+          <img
+            class="gallery-images"
+            src="images/gallery/04.jpg"
+            alt="An iceberg in water with snowy mountains in the background "
+        /></a>
+        <a
+          href="#"
+          class="img-links"
+          data-caption="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.
+"
+        >
+          <img
+            class="gallery-images"
+            src="images/gallery/05.jpg"
+            alt="Red cliffs in the desert"
+        /></a>
+        <a
+          href="#"
+          class="img-links"
+          data-caption="Fall is coming, I love when the leaves on the trees start to change color.
+"
+        >
+          <img
+            class="gallery-images"
+            src="images/gallery/06.jpg"
+            alt="Trees and foliage"
+        /></a>
+        <a
+          href="#"
+          class="img-links"
+          data-caption="I drove past this plantation yesterday, everything is so green!
+"
+        >
+          <img
+            class="gallery-images"
+            src="images/gallery/07.jpg"
+            alt="Plantation surrounded by trees and mountains"
+        /></a>
+        <a
+          href="#"
+          class="img-links"
+          data-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!
+"
+        >
+          <img
+            class="gallery-images"
+            src="images/gallery/08.jpg"
+            alt="Sand dunes"
+        /></a>
+        <a
+          href="#"
+          class="img-links"
+          data-caption="We enjoyed a quiet stroll down this countryside lane. 
+"
+        >
+          <img
+            class="gallery-images"
+            src="images/gallery/09.jpg"
+            alt="Narrow lane surrounded by trees and foilage"
+        /></a>
+        <a
+          href="#"
+          class="img-links"
+          data-caption="Sunset at the coast! The sky turned a lovely shade of orange.
+"
+        >
+          <img
+            class="gallery-images"
+            src="images/gallery/10.jpg"
+            alt="Orange sunset over coastline"
+        /></a>
+        <a
+          href="#"
+          class="img-links"
+          data-caption="I did a tour of a cave today and the view of the landscape below was breathtaking.
+"
+        >
+          <img
+            class="gallery-images"
+            src="images/gallery/11.jpg"
+            alt="View of road and trees below from entrance of cliffside cave"
+        /></a>
+        <a
+          href="#"
+          class="img-links"
+          data-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."
+        >
+          <img
+            class="gallery-images"
+            src="images/gallery/12.jpg"
+            alt="Field of Bluebells with snow capped mountains in background"
+        /></a>
+      </div>
+    </main>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/searchFilter.js"></script>
+
+    <script>
+      window.addEventListener("load", function () {
+        baguetteBox.run(".gallery");
+      });
+    </script>
   </body>
 </html>
