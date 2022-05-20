@@ -4,23 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="css/styles-mockup.css" />
+    <!-- MAIN STYLESHEET -->
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- BAGUETTEBOX STYLESHEET -->
     <link rel="stylesheet" href="css/baguetteBox.min.css" />
 
     <title>Interactive Photo Gallery</title>
   </head>
   <body>
     <header>
-      <div class="search-wrapper">
-        <input type="text" placeholder="Search" />
-      </div>
+      <form class="search-wrapper" action="index.html" method="post">
+        <input type="search" name="search" id="search" placeholder="Search" />
+      </form>
     </header>
     <main>
       <div class="gallery">
         <a
-          href="#"
+          href="images/lightbox/01.jpg"
           class="img-links"
           data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields."
         >
@@ -30,7 +31,7 @@
             alt="Hay bales in field with a cloudy sky above"
         /></a>
         <a
-          href="#"
+          href="images/lightbox/02.jpg"
           class="img-links"
           data-caption="The lake was so calm today. We had a great view of the snow on the mountains from here.
 "
@@ -41,7 +42,7 @@
             alt="Lake with snowy mountains in the background"
         /></a>
         <a
-          href="#"
+          href="images/lightbox/03.jpg"
           class="img-links"
           data-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below.
 "
@@ -52,7 +53,7 @@
             alt="Canyon with many green trees and an overcast sky above"
         /></a>
         <a
-          href="#"
+          href="images/lightbox/04.jpg"
           class="img-links"
           data-caption="It was amazing to see an iceberg up close, it was so cold but didn’t snow today. 
 "
@@ -63,7 +64,7 @@
             alt="An iceberg in water with snowy mountains in the background "
         /></a>
         <a
-          href="#"
+          href="images/lightbox/05.jpg"
           class="img-links"
           data-caption="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.
 "
@@ -74,7 +75,7 @@
             alt="Red cliffs in the desert"
         /></a>
         <a
-          href="#"
+          href="images/lightbox/06.jpg"
           class="img-links"
           data-caption="Fall is coming, I love when the leaves on the trees start to change color.
 "
@@ -85,7 +86,7 @@
             alt="Trees and foliage"
         /></a>
         <a
-          href="#"
+          href="images/lightbox/07.jpg"
           class="img-links"
           data-caption="I drove past this plantation yesterday, everything is so green!
 "
@@ -96,7 +97,7 @@
             alt="Plantation surrounded by trees and mountains"
         /></a>
         <a
-          href="#"
+          href="images/lightbox/08.jpg"
           class="img-links"
           data-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!
 "
@@ -107,7 +108,7 @@
             alt="Sand dunes"
         /></a>
         <a
-          href="#"
+          href="images/lightbox/09.jpg"
           class="img-links"
           data-caption="We enjoyed a quiet stroll down this countryside lane. 
 "
@@ -118,7 +119,7 @@
             alt="Narrow lane surrounded by trees and foilage"
         /></a>
         <a
-          href="#"
+          href="images/lightbox/10.jpg"
           class="img-links"
           data-caption="Sunset at the coast! The sky turned a lovely shade of orange.
 "
@@ -129,7 +130,7 @@
             alt="Orange sunset over coastline"
         /></a>
         <a
-          href="#"
+          href="images/lightbox/11.jpg"
           class="img-links"
           data-caption="I did a tour of a cave today and the view of the landscape below was breathtaking.
 "
@@ -140,7 +141,7 @@
             alt="View of road and trees below from entrance of cliffside cave"
         /></a>
         <a
-          href="#"
+          href="images/lightbox/12.jpg"
           class="img-links"
           data-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."
         >
@@ -153,8 +154,7 @@
     </main>
 
     <!-- JAVASCRIPT -->
-
-    <script src="js/searchFilter.js"></script>
+    <script src="js/app.js"></script>
 
     <!-- BAGUETTE BOX -->
     <script src="js/baguetteBox.min.js" async></script>
@@ -163,7 +163,5 @@
         baguetteBox.run(".gallery");
       });
     </script>
-
-    <script src="js/app.js"></script>
   </body>
 </html>
